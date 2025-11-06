@@ -5,11 +5,11 @@ auto_marker_docking_node:
     aruco_dict_id: 10           # 6x6_250
     marker_size: 0.10           # meters
 
-    camera_matrix: [543.8, 0.0, 312.5,
-                    0.0, 543.8, 235.1,
-                    0.0, 0.0, 1.0]
+    camera_matrix: [1455.23240, 0.0, 933.151651,
+                    0.0, 1452.69605, 528.910265,
+                    0.0, 0.0, 1.0]   #For Orbbec Astra Pro Plus camera used on Mirte Master must be changed when used with other camera
 
-    dist_coeffs: [0.0, 0.0, 0.0, 0.0, 0.0]
+    dist_coeffs: [0.18919004, -0.65017582,  0.00117596, -0.00382426,  0.78511447] #For Orbbec Astra Pro Plus camera used on Mirte Master must be changed when used with other camera
 
     drive_speed: 0.3
     stop_distance: 0.50
