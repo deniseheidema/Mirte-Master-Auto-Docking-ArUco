@@ -116,16 +116,18 @@ Generate markers here:
 
 ## 🧯 Troubleshooting
 
-| Issue                          | Cause                     | Fix                                             |
-| ------------------------------ | ------------------------- | ----------------------------------------------- |
-| Robot wobbles / oscillates     | Steering gain too high    | Lower `yaw_gain`, increase `yaw_turn_threshold` |
-| Marker not detected            | Wrong topic               | Check with `ros2 topic list`                    |
+| Issue                          | Cause                     | Fix                                                            |
+| ------------------------------ | ------------------------- | -------------------------------------------------------------- |
+| Robot wobbles / oscillates     | Steering gain too high    | Lower `yaw_gain`, increase `yaw_turn_threshold`                |
+| Marker not detected            | Wrong topic               | Check with `ros2 topic list`                                   |
+| Robot turns the wrong way      | Yaw is inverted           | Change `last_marker_yaw_ = -yaw;` to `last_marker_yaw_ = yaw;` |
+| Changes in code not working    | Code has not been rebuild | Rebuild code with `colcon build --symlink-install`
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests and improvements welcome!
+Pull requests and improvements are welcome!
 
 ---
 
