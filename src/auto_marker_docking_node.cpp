@@ -25,8 +25,8 @@ public:
     declare_parameter<std::string>("cmd_vel_topic", "/mirte_base_controller/cmd_vel");
     declare_parameter<int>("aruco_dict_id", 10);
     declare_parameter<double>("marker_size", 0.1);
-    declare_parameter<std::vector<double>>("camera_matrix", {543.8, 0.0, 312.5, 0.0, 543.8, 235.1, 0.0, 0.0, 1.0});
-    declare_parameter<std::vector<double>>("dist_coeffs", {0, 0, 0, 0, 0});
+    declare_parameter<std::vector<double>>("camera_matrix", {1455.23240, 0.0, 933.151651, 0.0, 1452.69605, 528.910265, 0.0, 0.0, 1.0});
+    declare_parameter<std::vector<double>>("dist_coeffs", {0.18919004, -0.65017582, 0.00117596, -0.00382426, 0.78511447});
     declare_parameter<double>("drive_speed", 0.3);
     declare_parameter<double>("stop_distance", 0.50);
     declare_parameter<double>("min_step", 0.10);
