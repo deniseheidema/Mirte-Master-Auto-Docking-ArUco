@@ -1,0 +1,21 @@
+auto_marker_docking_node:
+  ros__parameters:
+    camera_topic: "/camera/color/image_raw"
+    cmd_vel_topic: "/mirte_base_controller/cmd_vel"
+    aruco_dict_id: 10           # 6x6_250
+    marker_size: 0.10           # meters
+
+    camera_matrix: [543.8, 0.0, 312.5,
+                    0.0, 543.8, 235.1,
+                    0.0, 0.0, 1.0]
+
+    dist_coeffs: [0.0, 0.0, 0.0, 0.0, 0.0]
+
+    drive_speed: 0.3
+    stop_distance: 0.50
+    min_step: 0.10
+    turn_speed: 0.4
+    yaw_gain: 1.0
+    yaw_turn_threshold: 0.09
+    marker_timeout: 1.0
+    lost_threshold: 5
